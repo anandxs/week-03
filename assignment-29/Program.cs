@@ -1,35 +1,31 @@
 ﻿namespace assignment_29
 {
-	public delegate bool CallbackFunction(int x);
+	public delegate bool CallbackFunction(int[] arr);
 	internal class Program
 	{
 		static void Main(string[] args)
 		{
-			int[] arr = new int[] { 1, 2, 3, 4, 5 };
+			int[] arr = new int[] { 1, 2, 3, 4 };
 			CallbackFunction fn = new CallbackFunction(CheckSum);
 
 			MyFilter(arr, fn);
         }
 
-		public static bool CheckSum(int x)
+		public static bool CheckSum(int[] arr)
 		{
-			if (x % 2 == 0)
+			int sum = 0;
+
+			foreach(int val in arr)
 			{
-				return true;
+				sum += val;
 			}
 
-			return false;
+			return sum % 2 == 0;
 		}
 
 		public static void MyFilter(int[] myArray, CallbackFunction fn)
 		{
-			int sum = 0;
-			foreach (int num in myArray)
-			{
-				sum += num;
-			}
-
-			if (fn(sum))
+			if (fn(myArray))
 			{
                 Console.WriteLine("Sum is even");
             }
