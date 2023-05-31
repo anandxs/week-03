@@ -59,7 +59,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-27", "assignment
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-28", "assignment-28\assignment-28.csproj", "{6F333F60-3727-49DC-B85B-E1D96420C7D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assignment-29", "assignment-29\assignment-29.csproj", "{070AE965-73F5-46A9-8C07-3E487AD73C5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-29", "assignment-29\assignment-29.csproj", "{070AE965-73F5-46A9-8C07-3E487AD73C5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
