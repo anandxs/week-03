@@ -1,9 +1,13 @@
 ﻿try
 {
     Console.WriteLine("Enter height");
-    float height = float.Parse(Console.ReadLine());
 
-    if (height > 70)
+    double height;
+    if (!Double.TryParse(Console.ReadLine(), out height))
+    {
+        throw new Exception("Not a number");
+    }
+    else if (height > 70)
     {
         throw new Exception("HugeHeightException");
     }
